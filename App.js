@@ -1,11 +1,15 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
+import StackNavigation from './navigation/StackNavigation';
 
 export default function App() {
   return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text>Open up App.js to start working on your app!</Text>
+    <View className="flex-1">
+      <NavigationContainer>
+        <StackNavigation />
+      </NavigationContainer>
       <StatusBar style="auto" />
     </View>
   );
-}
+};
