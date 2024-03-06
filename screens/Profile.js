@@ -1,13 +1,13 @@
-import { Text, View, Button } from 'react-native';
+import { View, Text, Button } from "react-native";
 
 const Profile = ({ navigation }) => {
     return (
-        <View className="bg-blue-500">
+        <View className="">
             <Text>Profile</Text>
             <Button
                 title="Go back to Home"
                 onPress={() =>
-                    navigation.navigate('Home')
+                    navigation.goBack()
                 }
             />
         </View>
